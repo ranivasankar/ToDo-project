@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Insert Element in Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<center>
+    <h1>To-Do List</h1>
+
+    <form onsubmit="return false;">
+        <label for="nm">Name:</label><br>
+        <input type="text" id="nm" placeholder="Enter name"><br><br>
+
+        <label for="rn">Roll No.:</label><br>
+        <input type="text" id="rn" placeholder="Enter roll number"><br><br>
+
+        <button id="addbtn">Add</button>
+    </form>
+
+    <br>
+
+    <table id="maintbl" border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Roll No.</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</center>
+
+<!-- ✅ Load jQuery FIRST -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- ✅ Then your script -->
+<script src="script.js"></script>
+
+</body>
+</html>
